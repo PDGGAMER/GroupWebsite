@@ -53,7 +53,7 @@
                 text-align: center;
                 background-color: #4685d6;
                 border: 2px solid #b01e34;
-                border-radius: 5px; 
+                border-radius: 5px;
                 margin-bottom: 15px;
             }
             .MainPic {
@@ -87,10 +87,14 @@
                 width: 100%;
                 height: 100%;
                 z-index: 9999;
-                background: url(Mario-loader.gif) center no-repeat #fff;
+                background: url(Mario-Loading.gif) center no-repeat #fff;
             }
         </style>
         </head>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
         <body style = "background-color: #55b0ff;">
 
             <div class="se-pre-con"></div>
@@ -131,14 +135,14 @@
                 <p class = "info">Mario's primary attack is jumping on top of enemies, though many enemies have differing responses to this. For example, a Goomba will flatten and be defeated, while a Koopa Troopa will temporarily retract into its shell, allowing Mario to use it as a projectile. These shells may be deflected off a wall to destroy other enemies, though they can also bounce back against Mario, which will hurt or kill him. Other enemies, such as underwater foes and enemies with spiked tops, cannot be jumped on and damage the player instead. Mario can also defeat enemies above him by jumping to hit the brick that the enemy is standing on. Mario may also acquire the Fire Flower from certain ? blocks that when picked up changes the color of Super Mario's outfit and allows him to throw fireballs. A less common item is the Starman, which often appears when Mario hits certain concealed or otherwise invisible blocks. This item makes Mario temporarily invincible to most hazards and capable of defeating enemies on contact.</p>
                 <p class = "info">The game consists of eight worlds with four sub-levels called "stages" in each world. The final stage of each world takes place in a castle where Bowser is fought above a suspension bridge; the first seven of these Bowsers are "false Bowsers" whom are actually minions disguised as him, whilst the real Bowser is found in the 8th world. Bowser and his decoys are defeated by jumping over them and reaching the axe on the end of the bridge, although they can also be defeated using a Fire Flower. The game also includes some stages taking place underwater, which contain different enemies. In addition, there are bonuses and secret areas in the game. Most secret areas contain more coins for Mario to collect, but some contain "warp pipes" that allow Mario to advance directly to later worlds in the game without completing the intervening stages. After completing the game once, the player is rewarded with the ability to replay the game with changes made to increase its difficulty, such as all Goombas in the game being replaced with Buzzy Beetles, enemies similar to Koopa Troopas who cannot be defeated using the Fire Flower.</p>
             </div>
-                
+
             <div class = "second-game">
                 <h2 class = "heading" style = "position: relative; top: 50px;">Super Mario Bros: The Lost Levels (1986)</h2>
                 <img class = "MainPic2" src = "Lost.jpg">
             </div>
-                
+
             <script>
-            
+
 
                 var myIndex = 0;
                 carousel();
@@ -146,14 +150,16 @@
                     var i;
                     var x = document.getElementsByClassName("mySlides");
                     for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none";  
+                       x[i].style.display = "none";
                     }
                     myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
-                    x[myIndex-1].style.display = "block";  
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
                     setTimeout(carousel, 2000); // Change image every 2 seconds
                 }
             </script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
     </body>
 </html>
