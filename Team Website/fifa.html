@@ -1,134 +1,148 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-            .mySlides {display:none;}
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
 
-            li {
-                float: left;
-            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-            li a, .dropbtn {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+        li {
+            float: left;
+        }
 
-            li a:hover, .dropdown:hover .dropbtn {
-                background-color: #6ea2e6;
-            }
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-            li.dropdown {
-                display: inline-block;
-            }
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #6ea2e6;
+        }
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
+        li.dropdown {
+            display: inline-block;
+        }
 
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-            .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .heading {
-                font-family: "impact";
-                text-align: center;
-                background-color: #4685d6;
-                border: 2px solid #b01e34;
-                border-radius: 5px; 
-                margin-bottom: 15px;
-            }
-            .MainPic {
-                margin-right: 10px;
-                margin-bottom: 50px;
-                float: left;
-            }
-            .info {
-                margin-right: 5px;
-            }
-            .first-game {
-                max-width: 100%;
-                max-height: 15%;
-                overflow-y: hidden;
-            }
-        </style>
-        </head>
-        <body style = "background-color: #55b0ff;">
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
 
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">News</a>
-                <div class="dropdown-content">
-                  <a href="#">Call of Duty</a>
-                  <a href="fifa.html">Fifa</a>
-                  <a href="mario.html">Super Mario</a>
-                </div>
-                </li>
-              <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Games</a>
-                <div class="dropdown-content">
-                  <a href="#">Call of Duty</a>
-                  <a href="fifa.html">Fifa</a>
-                  <a href="mario.html">Super Mario</a>
-                </div>
-              </li>
-            </ul>
-            <h1  class = "heading">Fifa: 1993 - Onwards</h1>
-            <div>
-                <div class="w3-content w3-section" style="max-width:100%;">
-                  <img class="mySlides" src="Begin.jpg" style="width:100%; height: 700px;">
-                  <img class="mySlides" src="EA.jpg" style="width:100%; height: 700px;">
-                  <img class="mySlides" src="19.jpg" style="width:100%; height: 700px;">
-                </div>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .heading {
+            font-family: "impact";
+            text-align: center;
+            background-color: #4685d6;
+            border: 2px solid #b01e34;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .MainPic {
+            margin-right: 10px;
+            margin-bottom: 50px;
+            float: left;
+        }
+
+        .info {
+            margin-right: 5px;
+        }
+
+        .first-game {
+            max-width: 100%;
+            max-height: 15%;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body style="background-color: #55b0ff;">
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">News</a>
+            <div class="dropdown-content">
+                <a href="#">Call of Duty</a>
+                <a href="fifa.html">Fifa</a>
+                <a href="Mario-Loader.html">Super Mario</a>
             </div>
-            <div class = "first-game">
-                <h2 class = "heading" style = "position: relative;top: 10px;">Fifa 94</h2>
-                <img class = "MainPic" src = "OldFifa.png">
-                <p class = "info">Fifa is a game about soccer. The player can either play against a computer <strong>(CPU)</strong>or they can have two to four players playing against each other. The first Fifa game <i>kicked off</i> in 1993. It was called <B>Fifa 94</B>. Every year after, another fifa game would be released around Christmas. Each Fifa name would be one year after the year the game was released(e.g Fifa 12 was released around Christmas 2011).<br><br><a href = "fifa.html">Click here for more information of Fifa!</a></p>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Games</a>
+            <div class="dropdown-content">
+                <a href="#">Call of Duty</a>
+                <a href="fifa.html">Fifa</a>
+                <a href="Mario-Loader.html">Super Mario</a>
             </div>
-            <script>
-            var myIndex = 0;
-            carousel();
+        </li>
+    </ul>
+    <h1 class="heading">Fifa: 1993 - Onwards</h1>
+    <div>
+        <div class="w3-content w3-section" style="max-width:100%;">
+            <img class="mySlides" src="Begin.jpg" style="width:100%; height: 700px;">
+            <img class="mySlides" src="EA.jpg" style="width:100%; height: 700px;">
+            <img class="mySlides" src="19.jpg" style="width:100%; height: 700px;">
+        </div>
+    </div>
+    <div class="first-game">
+        <h2 class="heading" style="position: relative;top: 10px;">Fifa 94</h2>
+        <img class="MainPic" src="OldFifa.png">
+        <p class="info">Fifa is a game about soccer. The player can either play against a computer <strong>(CPU)</strong>or they can have two to four players playing against each other. The first Fifa game <i>kicked off</i> in 1993. It was called <B>Fifa 94</B>. Every year after, another fifa game would be released around Christmas. Each Fifa name would be one year after the year the game was released(e.g Fifa 12 was released around Christmas 2011).<br><br><a href="fifa.html">Click here for more information of Fifa!</a></p>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                   x[i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 2000); // Change image every 2 seconds
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-            </script>
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 
-    </body>
+</body>
 </html>
             
